@@ -3,14 +3,18 @@ import './App.css'
 function App() {
 
   return (
-    <div>
+    <div className='app'>
       <h1>Calculator</h1>
       <hr />
-      <table style={{ width: '400px'}}>
+      <table style={{ width: '400px', margin: 'auto'}}>
         
          {/*FIRT ROW */}
         <tr>
-          <td colSpan={4}> RESULTADO </td>
+          <td colSpan={4} style={{
+            border: '1px solid black', textAlign: 'end'
+            }}>
+            <h2>0</h2>
+          </td>
         </tr>
 
          {/*SECOND ROW */}
@@ -108,11 +112,15 @@ function App() {
 
         {/*SIXTH ROW */}
         <tr>
-          <td colSpan={2}>
+          <td>
           <button 
              tipe='button' 
-             className='btn btn-primary'
-             style={{width: "175px"}}>0</button>
+             className='btn btn-primary mt-2 w-75'> DEL </button>
+          </td>
+          <td>
+          <button 
+             tipe='button' 
+             className='btn btn-primary mt-2 w-75'>0</button>
           </td>
           <td>
             <button 
