@@ -1,5 +1,5 @@
 const Button = ({
-    Classes, 
+    classes, 
     handlelick,
     rows, 
     style,
@@ -8,7 +8,7 @@ const Button = ({
    <td rowSpan={rows}>
      <button 
        tipe='button' 
-       className={Classes}
+       className={classes}
        style={style}
        value={value}
        onClick={(e) => handlelick(e)}
